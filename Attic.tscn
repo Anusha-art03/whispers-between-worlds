@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://ubxj1rhcenro" path="res://RPG Top Down Characters - Free Version/Blue Haired Woman/blue_haired_woman.png" id="5_yl16g"]
 [ext_resource type="Texture2D" uid="uid://c7rk7yw1qcpmf" path="res://RPG Top Down Characters - Free Version/Blue Haired Woman/blue_haired_woman_shadow.png" id="6_0ojuu"]
 [ext_resource type="Texture2D" uid="uid://dritoq0okv4ku" path="res://Items/image_c177ee09-removebg-preview.png" id="6_naxlu"]
+[ext_resource type="Script" uid="uid://cylyt8j4t6q1t" path="res://Book World/Script/book_interaction.gd" id="7_lr0v6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nk6w7"]
 size = Vector2(1152, 40)
@@ -3738,7 +3739,7 @@ radius = 16.342125
 size = Vector2(11.222534, 22.83577)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1n7wq"]
-size = Vector2(26.421982, 25.849571)
+size = Vector2(26.421982, 41.30479)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nk6w7"]
 radius = 21.409119
@@ -3956,8 +3957,9 @@ fill_to = Vector2(1, 0.5121528)
 
 [node name="Floor" type="ColorRect" parent="." unique_id=1698470045]
 z_index = -1
+offset_top = -1.0
 offset_right = 1152.0
-offset_bottom = 648.0
+offset_bottom = 647.0
 color = Color(0, 0, 0, 1)
 
 [node name="TopWall" type="StaticBody2D" parent="." unique_id=815154614]
@@ -4114,16 +4116,17 @@ scale = Vector2(0.9999992, 0.99999905)
 shape = SubResource("RectangleShape2D_1n7wq")
 
 [node name="Bookshelf" type="Sprite2D" parent="Furniture" unique_id=518708600]
-position = Vector2(827, 466)
-scale = Vector2(1.6105142, 1.3739707)
+position = Vector2(827, 467.35995)
+scale = Vector2(1.6105142, 1.4171443)
 texture = ExtResource("2_0g8aa")
 region_enabled = true
 region_rect = Rect2(173, 87.52005, 38.048096, 63.47995)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Furniture/Bookshelf" unique_id=1391886334]
 position = Vector2(-11.378214, 6.5712566)
+script = ExtResource("7_lr0v6")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Furniture/Bookshelf/StaticBody2D" unique_id=829290695]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Furniture/Bookshelf/StaticBody2D" unique_id=1387048659]
 position = Vector2(11.999084, -8.390778)
 scale = Vector2(1.0000002, 1.0000001)
 shape = SubResource("RectangleShape2D_1n7wq")
