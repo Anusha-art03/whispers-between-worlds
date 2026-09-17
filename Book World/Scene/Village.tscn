@@ -275,7 +275,7 @@ shape = SubResource("RectangleShape2D_esleg")
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=2023100340]
 y_sort_enabled = true
-position = Vector2(575, 150)
+position = Vector2(575, 175)
 script = ExtResource("2_hfomf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=389038316]
