@@ -1,0 +1,299 @@
+[gd_scene format=3 uid="uid://cljmejh56fcf8"]
+
+[ext_resource type="Script" uid="uid://b2hiwnfsxslbu" path="res://player.gd" id="1_1ad42"]
+[ext_resource type="Script" uid="uid://b2u8rfyf4vsjv" path="res://Book World/Script/cottage.gd" id="1_06rld"]
+[ext_resource type="Texture2D" uid="uid://b5d4uskflytwo" path="res://icon.svg" id="2_06rld"]
+[ext_resource type="Texture2D" uid="uid://ubxj1rhcenro" path="res://RPG Top Down Characters - Free Version/Blue Haired Woman/blue_haired_woman.png" id="3_3scn0"]
+[ext_resource type="Texture2D" uid="uid://c7rk7yw1qcpmf" path="res://RPG Top Down Characters - Free Version/Blue Haired Woman/blue_haired_woman_shadow.png" id="4_dimij"]
+[ext_resource type="Texture2D" uid="uid://cgmyy76fobb0g" path="res://Book World/Assets/cottage bg.png" id="5_rg01n"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ihhdv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v7h0t"]
+atlas = ExtResource("3_3scn0")
+region = Rect2(0, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u8e0d"]
+atlas = ExtResource("3_3scn0")
+region = Rect2(32, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_naxlu"]
+atlas = ExtResource("3_3scn0")
+region = Rect2(64, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lr0v6"]
+atlas = ExtResource("3_3scn0")
+region = Rect2(96, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wcbcu"]
+atlas = ExtResource("3_3scn0")
+region = Rect2(0, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vrwtv"]
+atlas = ExtResource("3_3scn0")
+region = Rect2(32, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5uw74"]
+atlas = ExtResource("3_3scn0")
+region = Rect2(64, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x7d4h"]
+atlas = ExtResource("3_3scn0")
+region = Rect2(96, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_du5ub"]
+atlas = ExtResource("3_3scn0")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tniba"]
+atlas = ExtResource("3_3scn0")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4qyjm"]
+atlas = ExtResource("3_3scn0")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qrqle"]
+atlas = ExtResource("3_3scn0")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_256f4"]
+atlas = ExtResource("4_dimij")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1h4wx"]
+atlas = ExtResource("4_dimij")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ko821"]
+atlas = ExtResource("4_dimij")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jpbfp"]
+atlas = ExtResource("4_dimij")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lufvh"]
+atlas = ExtResource("3_3scn0")
+region = Rect2(0, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ho4ms"]
+atlas = ExtResource("3_3scn0")
+region = Rect2(32, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n8738"]
+atlas = ExtResource("3_3scn0")
+region = Rect2(64, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ikcsf"]
+atlas = ExtResource("3_3scn0")
+region = Rect2(96, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ynrh3"]
+atlas = ExtResource("4_dimij")
+region = Rect2(0, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0i1xx"]
+atlas = ExtResource("4_dimij")
+region = Rect2(32, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gyv8m"]
+atlas = ExtResource("4_dimij")
+region = Rect2(64, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_to4hr"]
+atlas = ExtResource("4_dimij")
+region = Rect2(96, 224, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yykwn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v7h0t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u8e0d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_naxlu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lr0v6")
+}],
+"loop": 1,
+"name": &"idle_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wcbcu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vrwtv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5uw74")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x7d4h")
+}],
+"loop": 1,
+"name": &"idle_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_du5ub")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tniba")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4qyjm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qrqle")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_256f4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1h4wx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ko821")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jpbfp")
+}],
+"loop": 1,
+"name": &"idle_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lufvh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ho4ms")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n8738")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ikcsf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ynrh3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0i1xx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gyv8m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_to4hr")
+}],
+"loop": 1,
+"name": &"idle_up",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nn50i"]
+size = Vector2(500.99997, 153)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ptjqt"]
+size = Vector2(501, 17)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wdw8a"]
+size = Vector2(20, 111)
+
+[node name="Cottage" type="Node2D" unique_id=28987820]
+script = ExtResource("1_06rld")
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=1933785462]
+z_index = 10
+y_sort_enabled = true
+position = Vector2(0, 100)
+script = ExtResource("1_1ad42")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1638937917]
+shape = SubResource("CircleShape2D_ihhdv")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=1144884267]
+visible = false
+texture = ExtResource("2_06rld")
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1100266603]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player" unique_id=1640001296]
+scale = Vector2(1, 1.125)
+sprite_frames = SubResource("SpriteFrames_yykwn")
+animation = &"idle_down"
+speed_scale = 7.0
+
+[node name="DialogueBox" type="PanelContainer" parent="Player" unique_id=344380845]
+custom_minimum_size = Vector2(100, 30)
+custom_maximum_size = Vector2(130, 40)
+offset_right = 130.0
+offset_bottom = 31.0
+
+[node name="DialogueLabel" type="Label" parent="Player/DialogueBox" unique_id=351608525]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "You're not supposed to be here."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="DialogueUI" type="CanvasLayer" parent="." unique_id=294775581]
+
+[node name="DimScreen" type="ColorRect" parent="DialogueUI" unique_id=366784278]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -645.0
+offset_top = -547.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.19607843)
+
+[node name="CottageBg" type="Sprite2D" parent="." unique_id=358354704]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("5_rg01n")
+
+[node name="Worldboud" type="StaticBody2D" parent="." unique_id=5942563]
+
+[node name="top" type="CollisionShape2D" parent="Worldboud" unique_id=392991882]
+position = Vector2(0.49998474, -66.5)
+shape = SubResource("RectangleShape2D_nn50i")
+
+[node name="bottom" type="CollisionShape2D" parent="Worldboud" unique_id=803397006]
+position = Vector2(-0.5, 132.5)
+shape = SubResource("RectangleShape2D_ptjqt")
+
+[node name="left" type="CollisionShape2D" parent="Worldboud" unique_id=539896605]
+position = Vector2(-240, 67.5)
+shape = SubResource("RectangleShape2D_wdw8a")
+
+[node name="right" type="CollisionShape2D" parent="Worldboud" unique_id=2137240300]
+position = Vector2(239, 67)
+shape = SubResource("RectangleShape2D_wdw8a")
+
+[node name="StoryPage" type="Label" parent="." unique_id=2048522887]
+offset_left = -63.0
+offset_top = 15.0
+offset_right = -23.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 10
+text = "📜"
+
+[node name="MirrorTrigger" type="ColorRect" parent="." unique_id=1881418338]
+z_index = 5
+offset_left = 95.0
+offset_top = -31.0
+offset_right = 128.0
+offset_bottom = 41.0
+color = Color(1, 1, 1, 0.18039216)

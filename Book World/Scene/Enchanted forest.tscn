@@ -1,0 +1,320 @@
+[gd_scene format=3 uid="uid://ckrfv4lmgfjqx"]
+
+[ext_resource type="Script" uid="uid://b2hiwnfsxslbu" path="res://player.gd" id="1_ex8jf"]
+[ext_resource type="Script" uid="uid://cva64dkhvj1ky" path="res://Book World/Script/enchanted_forest.gd" id="1_monwd"]
+[ext_resource type="Texture2D" uid="uid://b5d4uskflytwo" path="res://icon.svg" id="2_monwd"]
+[ext_resource type="Texture2D" uid="uid://ubxj1rhcenro" path="res://RPG Top Down Characters - Free Version/Blue Haired Woman/blue_haired_woman.png" id="3_smnjo"]
+[ext_resource type="Texture2D" uid="uid://c7rk7yw1qcpmf" path="res://RPG Top Down Characters - Free Version/Blue Haired Woman/blue_haired_woman_shadow.png" id="4_8qamn"]
+[ext_resource type="Texture2D" uid="uid://bev3th67cmmac" path="res://Book World/Assets/Enchanted forest.png" id="5_4xipp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1ih7d"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v7h0t"]
+atlas = ExtResource("3_smnjo")
+region = Rect2(0, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u8e0d"]
+atlas = ExtResource("3_smnjo")
+region = Rect2(32, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_naxlu"]
+atlas = ExtResource("3_smnjo")
+region = Rect2(64, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lr0v6"]
+atlas = ExtResource("3_smnjo")
+region = Rect2(96, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wcbcu"]
+atlas = ExtResource("3_smnjo")
+region = Rect2(0, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vrwtv"]
+atlas = ExtResource("3_smnjo")
+region = Rect2(32, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5uw74"]
+atlas = ExtResource("3_smnjo")
+region = Rect2(64, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x7d4h"]
+atlas = ExtResource("3_smnjo")
+region = Rect2(96, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_du5ub"]
+atlas = ExtResource("3_smnjo")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tniba"]
+atlas = ExtResource("3_smnjo")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4qyjm"]
+atlas = ExtResource("3_smnjo")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qrqle"]
+atlas = ExtResource("3_smnjo")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_256f4"]
+atlas = ExtResource("4_8qamn")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1h4wx"]
+atlas = ExtResource("4_8qamn")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ko821"]
+atlas = ExtResource("4_8qamn")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jpbfp"]
+atlas = ExtResource("4_8qamn")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lufvh"]
+atlas = ExtResource("3_smnjo")
+region = Rect2(0, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ho4ms"]
+atlas = ExtResource("3_smnjo")
+region = Rect2(32, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n8738"]
+atlas = ExtResource("3_smnjo")
+region = Rect2(64, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ikcsf"]
+atlas = ExtResource("3_smnjo")
+region = Rect2(96, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ynrh3"]
+atlas = ExtResource("4_8qamn")
+region = Rect2(0, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0i1xx"]
+atlas = ExtResource("4_8qamn")
+region = Rect2(32, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gyv8m"]
+atlas = ExtResource("4_8qamn")
+region = Rect2(64, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_to4hr"]
+atlas = ExtResource("4_8qamn")
+region = Rect2(96, 224, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vfpjm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v7h0t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u8e0d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_naxlu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lr0v6")
+}],
+"loop": 1,
+"name": &"idle_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wcbcu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vrwtv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5uw74")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x7d4h")
+}],
+"loop": 1,
+"name": &"idle_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_du5ub")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tniba")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4qyjm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qrqle")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_256f4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1h4wx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ko821")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jpbfp")
+}],
+"loop": 1,
+"name": &"idle_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lufvh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ho4ms")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n8738")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ikcsf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ynrh3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0i1xx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gyv8m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_to4hr")
+}],
+"loop": 1,
+"name": &"idle_up",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_82ngv"]
+size = Vector2(23.043766, 8.866667)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5snlf"]
+size = Vector2(541.38904, 280)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rdh6b"]
+size = Vector2(166.11113, 165.27777)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n1mow"]
+size = Vector2(156.66667, 251.66669)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mjwk3"]
+size = Vector2(298.33337, 177.22223)
+
+[node name="EnchantedForest" type="Node2D" unique_id=1129024798]
+script = ExtResource("1_monwd")
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=309521072]
+z_index = 10
+y_sort_enabled = true
+position = Vector2(50, 150)
+script = ExtResource("1_ex8jf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=620202587]
+shape = SubResource("CircleShape2D_1ih7d")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=1927103104]
+visible = false
+texture = ExtResource("2_monwd")
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1068417169]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player" unique_id=53637253]
+scale = Vector2(1, 1.125)
+sprite_frames = SubResource("SpriteFrames_vfpjm")
+animation = &"idle_down"
+speed_scale = 7.0
+
+[node name="EnchantedForest" type="Sprite2D" parent="." unique_id=1603124682]
+z_index = -10
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("5_4xipp")
+
+[node name="Worldbounds" type="StaticBody2D" parent="EnchantedForest" unique_id=513642689]
+
+[node name="Top" type="CollisionShape2D" parent="EnchantedForest/Worldbounds" unique_id=202151670]
+position = Vector2(-1.111144, -451.11108)
+scale = Vector2(100.000015, 1)
+shape = SubResource("RectangleShape2D_82ngv")
+
+[node name="Bottom" type="CollisionShape2D" parent="EnchantedForest/Worldbounds" unique_id=2086088135]
+position = Vector2(301.07736, 457.7778)
+scale = Vector2(100.000015, 1)
+shape = SubResource("RectangleShape2D_82ngv")
+
+[node name="left" type="CollisionShape2D" parent="EnchantedForest/Worldbounds" unique_id=1171049157]
+position = Vector2(-840.00006, 2.2222223)
+scale = Vector2(1, 100.000015)
+shape = SubResource("RectangleShape2D_82ngv")
+
+[node name="right" type="CollisionShape2D" parent="EnchantedForest/Worldbounds" unique_id=749636448]
+position = Vector2(840, 11.111112)
+scale = Vector2(1, 100.000015)
+shape = SubResource("RectangleShape2D_82ngv")
+
+[node name="Castle wall" type="CollisionShape2D" parent="EnchantedForest/Worldbounds" unique_id=2142622275]
+position = Vector2(481.8056, -293.33334)
+shape = SubResource("RectangleShape2D_5snlf")
+
+[node name="river t" type="CollisionShape2D" parent="EnchantedForest/Worldbounds" unique_id=558435927]
+position = Vector2(-465.83337, 4.027775)
+shape = SubResource("RectangleShape2D_rdh6b")
+
+[node name="river b" type="CollisionShape2D" parent="EnchantedForest/Worldbounds" unique_id=126713963]
+position = Vector2(-473.33337, 305.2778)
+shape = SubResource("RectangleShape2D_n1mow")
+
+[node name="middle tree" type="CollisionShape2D" parent="EnchantedForest/Worldbounds" unique_id=1934476834]
+position = Vector2(80, 113.333336)
+shape = SubResource("RectangleShape2D_mjwk3")
+
+[node name="RedFlower" type="Label" parent="." unique_id=1064176957]
+offset_left = 252.0
+offset_top = 107.0
+offset_right = 292.0
+offset_bottom = 130.0
+text = "🌹"
+
+[node name="RedFlowerPoint" type="Marker2D" parent="RedFlower" unique_id=1089377123]
+
+[node name="MoonlitWater" type="Label" parent="." unique_id=690239508]
+offset_left = -268.0
+offset_top = 41.0
+offset_right = -246.0
+offset_bottom = 64.0
+theme_override_font_sizes/font_size = 10
+text = "💧"
+
+[node name="MoonlitWaterPoint" type="Marker2D" parent="MoonlitWater" unique_id=119366670]
+
+[node name="StarFragment" type="Label" parent="." unique_id=164926058]
+offset_left = 23.0
+offset_top = -91.0
+offset_right = 63.0
+offset_bottom = -68.0
+theme_override_font_sizes/font_size = 13
+text = "✨"
+
+[node name="StarFragmentPoint" type="Marker2D" parent="StarFragment" unique_id=1158187772]
+
+[node name="GatePortal" type="ColorRect" parent="." unique_id=177218201]
+visible = false
+offset_left = -214.0
+offset_top = -171.0
+offset_right = -174.0
+offset_bottom = -102.0
+color = Color(0.25924975, 0.124183185, 0.58948165, 0.34901962)
