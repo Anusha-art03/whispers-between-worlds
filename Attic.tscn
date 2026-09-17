@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://c7rk7yw1qcpmf" path="res://RPG Top Down Characters - Free Version/Blue Haired Woman/blue_haired_woman_shadow.png" id="6_0ojuu"]
 [ext_resource type="Texture2D" uid="uid://dritoq0okv4ku" path="res://Items/image_c177ee09-removebg-preview.png" id="6_naxlu"]
 [ext_resource type="Script" uid="uid://cylyt8j4t6q1t" path="res://Book World/Script/book_interaction.gd" id="7_lr0v6"]
+[ext_resource type="Script" uid="uid://dsjda7qa5au6x" path="res://teddy_interaction.gd" id="12_wcbcu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nk6w7"]
 size = Vector2(1152, 40)
@@ -4359,3 +4360,8 @@ scale = Vector2(0.12873839, 0.116699286)
 energy = 1.5
 texture = SubResource("GradientTexture2D_yl16g")
 texture_scale = 2.0
+
+[node name="TeddyPortal" type="Marker2D" parent="." unique_id=5289940]
+position = Vector2(149, 118)
+gizmo_extents = 20.0
+script = ExtResource("12_wcbcu")

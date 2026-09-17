@@ -1,11 +1,27 @@
-extends Area2D
+extends Marker2D
+
+var player = null
+var used := false
+var interaction_distance := 120.0
 
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+func _ready():
+	player = get_tree().current_scene.find_child("Player", true, false)
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _process(_delta):
+	if used:
+		return
+
+	if player == null:
+		return
+
+	var distance = global_position.distance_to(player.global_position)
+
+	if distance <= interaction_distance:
+		if Input.is_key_pressed(KEY_E):
+			used = true
+
+			get_tree().change_scene_to_file(
+				"res://TeddyWorld/TeddyWorld.tscn"
+			)
